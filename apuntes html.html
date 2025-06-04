@@ -1,0 +1,152 @@
+<!DOCTYPE html> <!--Tipo de documento-->
+<html lang="en"> <!--Idioma del documento-->
+<head> <!--Cabeza del documento-->
+  <meta charset="UTF-8"> <!--Informacion del documento y codificacion, determina como se transmite y almacena el texto-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Sirve para escala en diferentes dispositivos-->
+  <title>Introduccion a HTML</title>  <!--Titulo en url-->
+</head>
+<body><!--Inicia el cuerpo de mi pagina-->
+  <!--?alt + z ajusta texto-->
+  <h1>Introduccion a HTML h1</h1>
+  <h2>Yalbani Aranda con etiqueta h2</h2>
+  <h3> Esta etiqueta h3</h3>
+  <h4>    Esta etiqueta h4</h4>
+  <h5>      Esta etiqueta h5</h5>
+  <h6>          Esta etiqueta h6</h6>
+  <hr> <!--Etiqueta divisoria-->
+  <br> <!--Etiqueta para salto de linea-->
+  <h1>Hola de nuevo</h1>
+  <p>Etiqueta para parrafos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis qui nihil veritatis ducimus quo amet? Maxime harum, atque ut quasi mollitia fugit esse dicta totam, maiores cupiditate a soluta ullam!</p>
+  <br>
+<!--*Atributos-->
+    <!--*Atributos globales: Son aquellos que se aplicar a todos los elementos del documento, y no dependen de la etiqueta. Entre los atributos globlales más importantes están:
+    
+        - Class: Se usa para especificar una clase CSS que se aplicará a un elemento. Por ejemplo <div class="clase1 clase2">.
+        
+        - id: Se usa para especificar un identificador unico para un elemento (el valor debe ser único dentro del documento HTML).
+
+        - Style: Se usa para especificar una propiedad CSS que se aplicará a un elemento. El atributo HTML style se usa para agregar estilos a un elemento, como color, fuente, tamaño y más.
+    https://www.aluracursos.com/blog/ques-es-html-parte-5-atributos -->
+    <h3>Atributos HTML</h3>
+    <p style="background-color: rgb(245, 140, 101); text-align: justify; font-family: cursive;"> <!--Aqui agregamos atributos que aplican a todo el elemento--> En los últimos meses, <u>los capibaras se han vuelto populares en redes sociales.</u> <!--Se subraya el texto--> <b>Su temperamento tranquilo y su apariencia inofensiva han despertado simpatía entre miles de personas.</b> <!--Formato en negrita--> Pero, ¿por qué no deberías tener un capibara como mascota?... </p>
+    <h2>Un animal silvestre con necesidades complejas:</h2>
+    <p style="background-color: rgb(123, 190, 192); font-family: sans-serif;">Una razón por la que no deberías tener un capibara como mascota <em> es porque se trata de un <del>animal</del> <!--Tacha el texto-->  silvestre con necesidades complejas.</em> </p> <!--Enfatiza el texto-->
+<!--?Etiquetas de parrafos de texto
+        Nos sirven para crear parrafos dentro de nuestro documento. Las etiquetas de parrafo tienen una serie de atributos que nos permiten definir el tamaño, color, estilo, etc.
+    <p align="center">
+    <p align="right">
+    <p align="left">
+    <p align="justify">-->
+
+         <!--Etiquetas Semanticas: fragmentos de texto
+    Son etiquetas HTML simples para seleccionar un fragmento de texto y dotarlo de un significado semántico especial. Lo principal es entender que no se hace sólo por mera intención visual, sino porque se le quiere dar un significado semántico, y además, quizás también por una cuestión visual
+    https://lenguajehtml.com/html/texto/que-son/
+-->
+    <br>
+    <br>
+    <!--*Etiquetas de enlace.-->
+    <!-- *
+        *<a></a> etiqueta anchor (anclaje) permite crear hipervínculos.
+
+        *Los enlaces nos permiten la navegacion por medio de hipervinculos (links) que realizan una conexion y referencian otros archivos o paginas web dentro de la misma aplicacion o externa a la misma.
+
+    *En HTML 5 se pueden definir los enlaces con la etiqueta a que significa "anchor" o ancla. Esta etiqueta tiene varios atributos:
+
+   * - href: nos permite definir la ubicación de la página a la que nos vamos a enlazar. Este atributo puede ser una URL (externa) o un archivo dentro de nuestra carpeta del proyecto (assets). La dirección va entre comillas.El atributo href. La <a>etiqueta define un hipervínculo. El href-atributo especifica la URL de la página a la que va el enlace.
+
+    * - target: Define la ventana de destino, que puede ser una ventana nueva o la misma ventana.
+      *  - _blank: abre el enlace en una nueva ventana.
+      *  - _self: abre el enlace en la misma ventana. Este es el valor por defecto.
+        * Ya que sabemos como hacer referencias a paginas, es importante conocer las distintas rutas de enlace y sus tipos.
+
+     *- Rutas absolutas: Son aquellas que definien la ubicacion completa de un archivo o pagina web, por ejemplo: http://www.google.com.
+
+    *- Rutas relativas: Son las que se definen a partir de la posicion en la estructura local de la pagina que lo esta refiriendo,es decir, solo indica el orden de directorios, por ejemplo: /assets/img/perritoplayero.jpg.
+*-->
+<h3>Etiqueta de enlance o a</h3>
+<a href="https://mexico.generation.org/" target="_blank">Dale clik a Generation</a>
+<br>
+<br>
+<a href="https://www.infobae.com/mexico/2025/04/27/lady-gaga-conquista-a-mexico-con-un-show-epico-lleno-de-pasion-y-teatralidad/" target="_blank">Informate pequenio mostro</a>
+<hr>
+<br>
+<a href="mailto: yarandacardona@gmail.com">Enviar correo a Yalbani</a>
+<br>
+<hr>
+<!--Etiqueta de imagen: img
+
+    La etiqueta imagen nos permite agregar  una imagen en un documento web. En formatos mas usados: jpeg, png, gift.
+    - src (source): define la ubicacion del archivo ya sea externo o interno
+    - width: definimos ancho de imagen
+    - height: definimos el alto de nuestra imagen
+    - alt : agregamos una descrpcion a la imagen
+-->
+    <h3>Etiqueta img</h3>
+<img src="https://www.billboard.com/wp-content/uploads/2025/04/lady-gaga-Mexico-City-april-2025-billboard-espanol-1548.jpg" alt="Lady Gaga en Mexico" width="480px" height="320"> <!--[Primera imagen con hipervinculo]-->
+<img src="/assets/descarga.jpg" alt="Poster concierto de Lady Gaga" width="380px" height="480"> <!--[Primera imagen desde mi ordenador en ruta relativa]-->
+<br>
+<hr>
+<br>
+<h3>Listas ordenadas y desordenadas</h3>
+<!--ol - lista ordenada-->
+<!--ul - lista desordenada-->
+<!--li - item o elemento-->
+<h4>Lista ordenada</h4>
+<ol> Colores del arcoiris o tipos de cafe
+    <li>rojo</li>
+    <li>naranja</li>
+    <li>amarillo</li>
+    <li>verde</li>
+    <li>azul</li>
+    <li>Morado</li>
+
+</ol>
+<br>
+<h4>Lista desordenada</h4>
+<ul>Paises donde va a dar conciertos o lista de super
+  <li>Londres</li>
+    <li>Estocolmo</li>
+    <li>Milan</li>
+     <li>Barcelona</li>
+      <li>Berlin</li>
+       <li>Amsterdam</li>  
+</ul>
+<br>
+<hr>
+<br>
+<!--*La <div>etiqueta define una división o una sección en un documento HTML.
+    La <div>etiqueta se utiliza como contenedor de elementos HTML, que luego se diseñan con CSS o se manipulan con JavaScript.
+    
+    La <div>etiqueta se diseña fácilmente usando el atributo class o id.
+    
+    ¡Se puede poner cualquier tipo de contenido dentro de la <div> etiqueta! 
+    
+    Nota: De forma predeterminada, los navegadores siempre colocan un salto de línea antes y después del <div>elemento.
+
+    Todos los atributos que se agreguen al div se aplicarán a todos los elementos. -->
+<div style="background-color: rgb(37, 26, 26); color: rgb(180, 86, 19); font-family: Georgia, 'Times New Roman', Times, serif; border: 4px solid black; text-align: justify;">
+   <p>La Ciudad de México vivió el sábado una noche que quedará en la memoria de los little monsters. <b>Lady Gaga volvió a los escenarios mexicanos tras más de una década,</b> desatando una auténtica explosión de emociones en el Estadio GNP Seguros ante más de 61 mil seguidores entregados por completo a su reina.
+    <br>
+    La artista neoyorquina, cuyo nombre real es Stefani Joanne Angelina Germanotta, apareció en escena a las 9:15 de la noche, envuelta en un vestido rojo sangre que, como un truco de magia, se transformó en una jaula viviente de la que emergieron sus bailarines. Así, entre penumbras y gritos de “¡Gaga, Gaga!”, inició una ceremonia de música y teatralidad que llevó a su público por un viaje catártico a través de sus distintas eras.
+    <br>
+    Con “Bloody Mary” y “Abracadabra”, Gaga abrió el primer acto de un espectáculo dividido en cinco segmentos, respaldada por una monumental estructura escénica que evocaba los palcos arruinados de un teatro antiguo, en una mezcla de decadencia y renacimiento. <u>El concepto visual acompañó a la perfección el espíritu de Mayhem,</u> su octavo álbum, del cual promueve esta nueva gira mundial.
+   </p>
+</div>
+<br>
+<hr>
+<br>
+<h3>Etiqueta span</h3>
+<!--*La etiqueta <span> es un contenedor en línea que se utiliza para marcar una parte de un texto o una parte de un documento.
+
+    La etiqueta <span> se diseña fácilmente con CSS o se manipula con JavaScript usando el atributo class o id.
+    
+    La etiqueta <span> es muy parecida al elemento <div> , pero <div> es un elemento a nivel de bloque y <span> es un elemento en línea.
+        
+    PUEDE USARSE COMO MARCATEXTOS-->
+<p> <span style="background-color: beige; font-family: fantasy; color: cornflowerblue;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis possimus aliquam a cumque blanditiis architecto earum magni ex unde, error dolor neque, eaque recusandae?</span> Deleniti adipisci qui minus explicabo. </p>
+</body>
+<footer> 
+    <p> <span style="background-color: rgb(43, 12, 71); font-family: fantasy; color: rgb(168, 235, 168);"> Copyright 2025. Todos los derechos reservados.</span> </p>
+<p style="background-color: rgb(43, 12, 71); font-family: fantasy; color: rgb(168, 235, 168);"> Copyright 2025. Todos los derechos reservados. </p> 
+</footer>
+</html> <!--Termina documento HTML-->

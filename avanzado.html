@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<head>
+
+</head>
+<body>
+    <h1>
+HTML AVANZADO
+    </h1>
+    <br>
+    <h3>
+TABLAS
+    </h3>
+    <!--Crea el elemento tabla con el atributo borde, le anadimos un borde a la tabla-->
+<table border="1" align="center">
+    <tr>
+        <th>Tiendita Generation</th> <!--Celda de encabezado-->
+        <th> Cursos </th>
+        <th> Termos </th>
+        <th> Playeras</th>
+        <th> Material de estudio</th>
+    </tr>
+    <tr>
+        <td> Sandwiches </td><!--Celda de datos-->
+        <td> HTML </td>
+        <td> Yeti </td>
+        <td> Logo grande color negro</td>
+        <td> Manual de HTML </td>
+    </tr>
+    <tr>
+        <td> Jugos </td>
+        <td> CSS </td>
+        <td> Stanley </td>
+        <td> Tipo Polo </td>
+        <td> Links y PDF </td>
+    </tr>
+</table>
+<br>
+    <table border="2">
+<thead><!--Agrupa los elementos en la cabecera-->
+<tr>
+    <th colspan="3"> Encabezado de tabla demostracion</th> <!--Este atributo nos permite expander la columa de datos, hasta donde se puede expandir la celda-->
+</tr>
+</thead>
+<tbody><!--Agrupa los elementos en el contenido de la tabla-->
+<tr>
+    <td> Cuerpo de la tabla </td>
+    <td rowspan="2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus natus nisi voluptatum nulla error? In molestias vero quisquam reprehenderit ratione, harum perferendis, libero dolores quia nobis autem. Ea, quaerat. </td>
+    <td> Continuacion cuerpo de tabla</td>
+</tr>
+<tr>
+    <td>Tabla de demostracion</td>
+    <td>Otro lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum mollitia nobis, cupiditate illo perferendis quod similique esse iure officia, necessitatibus nihil doloremque repellendus. Laboriosam distinctio iure, nesciunt ipsum odit dolor?</td>
+    <td>Fin del cuerpo de tabla</td>
+</tr>
+</tbody>
+<tfoot> <!--Agrupa los elementos para descripcion de la tabla-->
+<tr>
+    <th colspan="3" align="center">Piecitos de tabla</th>
+</tr>
+</tfoot> 
+    </table>
+<br>
+<hr>
+<br>
+<h3>Vinculos de anclaje, parte 2</h3>
+<br>
+<a href="assets/apuntes html.html">Primera practica de HTML</a>
+<br>
+<a href="/assets/receta html.html" target="_blank">Receta</a>
+<br>
+<h5>Numeros de telefono</h5>
+<a href="tel: +527472">Llame ya!</a>
+<br>
+<h5>Anclaje de WA</h5>
+<a href="https://wa.me/1234567890" target="_blank"> Enviame un Whats</a>
+<br>
+<h5>Anclaje Mapa</h5>
+<a href="https://www.google.com/maps/place/Down+The+Rabbit+Hole+%2F+Cafeter%C3%ADa+%26+Creper%C3%ADa/data=!4m2!3m1!1s0x0:0xf8e6019427f89658?sa=X&ved=1t:2428&ictx=111" target="_blank">Ver ubicacion</a>
+<br>
+<hr>
+<br>
+<h3>Formulario y tipos de entrada</h3>
+<br>
+<form action="procesar_formulario" method="get">
+    <input type="text" placeholder="Nombre"> <!--Placeholder informa-->
+    <button type="submit">ENVIAR</button>
+    <button type="reset">Reset o borrar</button>
+</form><!--La etiqueta form, se utiliza para crear un formulario en HTML que permite a los usuarios ingresar información
+    action: Especifica a la URL a la que  se enviaran los datos del formulario cuando este se envía.
+method : Define el metodo HTTP que se utilizara para enviar los datos (puede ser "get" o "post")-->
+<!-- type: Define el tipo de entrada (texto, contraseña, correo electrónico, etc.).
+name: Es el nombre del campo, utilizado para identificar el dato cuando se envía el formulario.
+placeholder: Proporciona un texto de ejemplo dentro del campo de entrada. -->
+<br>
+<input type="password" name="contraseña" placeholder="Contraseña">
+<br>
+<br>
+<input type="email" name="correo" placeholder="Correo">
+<br> <br>
+<label for="nombre"> Nombre
+    <input type="text" id="nombre" placeholder="Nombre">
+</label> <!--for : es un atributo que se aasocia con el id de un elemnto de entrada para indicar a que campo se refiere-->
+<!--La etiqueta Label se utiliza para etiquetar un elemento de entrada en un formulario, lo que mejora la accesibilidad y la experienciua de usuario
+https://developer.mozilla.org/es/docs/Web/HTML/Element/textarea-->
+<br> <br>
+<h5>Area de Texto</h5>
+<textarea name="comentarios" id="comentarios" cols="50" rows="10" placeholder="Escriba sus comentarios"></textarea>
+<!--Definimos el numero de lineas visibles en el area del texto. La diferencia es que rows controla la altura del area y cols lo ancho-->
+<br><br>
+<h5>Numeros</h5>
+<input type="number" name="number" placeholder="Cantidad de articulos">
+<br>
+<h5>Fecha</h5>
+<label for="date">Fecha de nacimiento
+<input type="date" name="Fecha">
+</label>
+<br>
+<h5>Hora</h5>
+<input type="time" name="Hora">
+<br>
+<h5>Archivo (file) </h5>
+<input type="file" name="archivo">
+<!--El atributo accept se utiliza de la siguiente manera:
+Tipos MIME: Puedes especificar tipos MIME (por ejemplo, image/png, application/pdf) para restringir a los tipos de archivo deseados.
+Extensiones de archivo: También puedes usar las extensiones de archivo (por ejemplo, .jpg, .png, .pdf) para restringir a los tipos de archivo deseados.
+Combinación: Puedes combinar tipos MIME y extensiones (por ejemplo, image/*, .pdf). 
+Ejemplos:
+Restringir a imágenes: accept="image/*" o accept="image/jpeg, image/png, image/gif".
+Restringir a PDF: accept=".pdf" o accept="application/pdf".
+Restringir a imágenes y PDF: accept="image/*, .pdf, application/pdf"-->
+<br>
+<h5>Chekbox</h5>
+<input type="checkbox" name="checkbox">
+<label for="checkbox">Acepto terminos y condiciones</label>
+<br>
+<br>
+<a href="avanzado.html"><button>Regresar</button></a>
+<a href="avanzado.html">To the top</a>
+<button onclick="location.href=#contacto">Contactame</button>
+</body>
+</html>
